@@ -1,5 +1,7 @@
 *.sublime*
 
+*.nb
+
 *.aux
 *.log
 *.pdf
