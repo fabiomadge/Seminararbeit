@@ -1,5 +1,57 @@
 \setcounter{section}{0}
-\section{Eigenschaften}
-\section{Bild}
-\section{Herleitung}
-Man nehme einen Stift und ein Papier. Unter hinzugabe von können wird der Stift über das Papier geführt. Das Ergebnis sind die Kegelschnitte.
+Für die angestrebte Zeichnung der einzelnen Kegelschnitte ist zunächst eine schärfere Definition nötig. Dadurch entstehen geometrische Zusammenhänge, welche in der Konstruktion ausgenutzt werden können.
+\begin{displaymath}
+	\begin{array}{rcl}
+		Ellipse  & = & \{P\in E^2\;|\;\overline{{PF}_1} + \overline{{PF}_2} = 2a\}\\
+		Parabel  & = & \{P\in E^2\;|\;\overline{PF} = \overline{Pl}\}\\
+		Hyperbel & = & \{P\in E^2\;|\;|\overline{{PF}_2} - \overline{{PF}_1}| = 2a\}
+	\end{array}
+\end{displaymath}
+P stellt dabei für alle Fälle die Summe aller Punkte aus der flachen Zeichenebene $E^2$ dar, die den jeweiligen Kegelschnitt bilden.
+\section{Ellipse}
+Die Ellipse wird durch ihre zwei Brennpunkte F1 und F2 bestimmt. Darüber hinaus ist die Exzentrizität, welche sich auf die lange Halbachse a auswirkt.
+Eine sehr einfache Art der Konstruktion stellt die Gärtnerkonstuktion dar. Der Name ist wohl durch die ersten Verwendern dieser Methode bedingt.
+Die Tatsache, dass die Abstände jedes Punktes P zu den Brennpunkten konstant 2a beträgt wird dabei ausgenutzt. Um die Kurve nachzuvollziehen werden F1 und F2 markiert und ein Faden der Länge 2a+(F1F2) an seinen Enden verbunden. Nun kann der Faden an den Brennpunkten fixiert werden, dies kann zum Beispiel durch eine Nadel geschehen.
+Wird nun mithilfe einer Stiftspitze der Faden gespannt und ein Dreieck mit F1 und F2 gebildet, ist die Stiftspitze immer auf der Ellipsenbahn. Der Stift kann nun um die Brennpunkte geführt werden und auf dem Papier entsteht dabei eine Ellipse.
+Für den Kreis gilt im Grunde das selbe Vorgehen, doch Fallen die beiden Brennpunkte und der Mittelpunkt M zusammen. Es entsteht kein Dreieck, sondern eine Strecke. Statt einer Faden-Nadel-Kombination kann in diesem Fall auch auf einen Zirkel zurückgegriffen werden, jedoch muss in diesem Fall der einfache Radius eingemessen werden.
+\begin{displaymath}
+	\begin{array}{rcl}
+		Kreis & = & \{P\in E^2\;|\;\overline{PM} + \overline{PM} = 2r\}\\
+		Kreis & = & \{P\in E^2\;|\;\overline{PM} = r\}
+	\end{array}
+\end{displaymath}
+\section{Parabel}
+Wichtig für die Parabel ist deren Achse, sie ist gleichzeitig die einzige Symmerieachse. Auf ihr befinden sich sowohl der Brennpunkt F und der Scheitel S, welcher den Extremwert der Parabel markiert. Die Leitlinie l steht senkrecht zur Achse und schneidet den, mit S punktgespiegelten, Brennpunkt F, F'.\\
+Die Parabel kann mit Zirkel und Geodreieck konstruiert werden, indem erneut die Definition herangezogen wird. Jeder Punkt P, welcher die gleiche Entfernung zu F, wie l hat, befindet sich auf der Parabel. Um jene Punkte zu finden wird ein Hilfspunkt D eingeführt. Er befindet sich ebenfalls auf der Parabelachse. Durch ihn führt die Parallele a zu l. Nun wird ein Kreis c mit dem Radius (F'D) um F gezogen. Die Schnittpunkte X und X' sind Teile der Punktmenge Parabel. Für verschiedene D ergeben sich jeweils andere Schnittpunkte. Werden diese sinnvoll verbunden ergeben sie eine Parabel. Bei dieser Konstruktion werden jedem D zwischen null und zwei Schnittpunkte zugeordnet.
+\begin{displaymath}
+   \text{Schnittpunkte(D)} = \left\{
+     \begin{array}{lr}
+       2 & \overline{FD} < \overline{F'D}\\
+       1 & \overline{FD} = \overline{F'D}\\
+       0 & \overline{FD} > \overline{F'D}
+     \end{array}
+   \right.
+\end{displaymath}
+\section{Hyperbel}
+Wie die vorgestellte Methode zu Konstruktion der Parabel ermöglicht die folgende nicht ganze Hyperbelsegmente kontinuierlich auf das Papier zu bringen. Dadurch mag die Relevanz für die Praxis gering sein, jedoch ist sie sehr einbänglich. Darüber hinaus wird ausschließlich ein Zirkel benötigt. Es sei aber ausdrücklich auch auf die Existenz von Alternativen hingewiesen.\\
+Für die Konstruktion werden unter anderem die beiden Brennpunkte F1 und F2 benötigt. Sie liegen beide auf der Hauptachse. Zwischen ihnen sind, abhängig von der Exzentrizität, die Scheitelpunkte S1 und S2 zu finden. Es trennen sie der Abstand 2a. Zwischen ihnen ist der Mittelpunkt M verortet. Schließlich wird noch der Hilfspunkt D als Teil der Hauptachse jenseits der Brennpunkte definiert.
+Aus der Definition folgt, dass jeder Punkt, bei dem die Differenz der Abstände zu den Brennpunkten 2a beträgt, auf der Hyperbel liegt. Das ist für einen der Scheitelpunkte erstmal leicht zu zeigen.
+\begin{displaymath}
+	\begin{array}{lcccrcl}
+		|&\overline{{PF}_2} & - & \overline{{PF}_1}&| & = & 2a\\
+		|&\overline{{S}_1{S}_2}+\overline{{S}_2{F}_2} & - & \overline{{S}_1{F}_1}&| & = & 2a\\
+		|&2a+\overline{{S}_2{F}_2} & - & \overline{{S}_1{F}_1}&| & = & 2a\\
+		&&&|2a| && = & 2a
+	\end{array}
+\end{displaymath}
+Erst werden die Abstände durch geeignete Strecken substituiert, anschließend fallen einige raus. Nun kann auch auf den Betrag verzichtet werden, dar a positiv definiert ist.\\
+Wind nun für einen Kreis um F1 PF1 in den Zirkel genommen und für einen Kreis um F2 PF2, so ist der Schnittpunkt dieser Kreise auf der Hyperbel. Aus der Definition folgt, dass beide Radien beliebig größer werden dürfen, wenn das Delta gleich bleibt. Um dies in der Konstruktion zu erreichen wird D verwendet.
+\begin{displaymath}
+	\begin{array}{lcccrcl}
+		|&\overline{{PF}_2} & - & \overline{{PF}_1}&| & = & 2a\\
+		|&\overline{{S}_1{S}_2}+\overline{{S}_2{F}_2}+\overline{{F}_1{D}} & - & (\overline{{S}_1{F}_1}+\overline{{F}_1{D}})&| & = & 2a\\
+		|&2a+\overline{{S}_2{F}_2} & - & \overline{{S}_1{F}_1}&| & = & 2a\\
+		&&&|2a| && = & 2a
+	\end{array}
+\end{displaymath}
+Jetzt kann können für jedes D bis zu 2 Schnittpunkte generiert werden welche auf der Hyperbel liegen, indem die anderen Strecken in den Zirkel genommen werden. Für den Zweiten Hyperbelast kann entweder mit der Lot durch M auf der Hauptachse gespiegelt werden, oder bereits beim Zeichnen die Kreise für beide Seiten gezogen werden.\\
