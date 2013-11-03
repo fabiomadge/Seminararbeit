@@ -33,7 +33,7 @@ Da die Parabel über keinen sinnvollen Mittelpunkt verfügt, ist die Betrachtung
 \subsection{Numerische Exzentrizität}
 Die numerische Exzentrizität $\epsilon$ drückt das Verhältnis von e zu a aus. So trifft somit eine Aussage darüber, ob der Brennpunkt kürzer, oder weiter vom Mittelpunkt entfernt ist als der Hauptscheitel.
 \begin{displaymath}
-	\epsilon = e/a
+	\epsilon = \frac{e}{a}
 \end{displaymath}
 Anhand der numerische Exzentrizität kann auch die Ausprägung eines Kegelschnitts untersucht werden 
 \begin{displaymath}
@@ -47,8 +47,76 @@ Anhand der numerische Exzentrizität kann auch die Ausprägung eines Kegelschnit
    \right.
 \end{displaymath}
 \section{Ellipse}
-Mittelpunktsgleichung
+Ein weiteres Mal wird die Definition als Basis der Herleitung genutzt. Dabei werden die Strecken durch bekannte Größen ersetzt.
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{{PF}_1} + \overline{{PF}_2}  & = & 2a\\
+		\sqrt{{(e+x)}^2 + y^2} + \sqrt{{(e-x)}^2 + y^2} & = & 2a\\
+		\sqrt{{(e+x)}^2 + y^2} & = & 2a - \sqrt{{(e-x)}^2 + y^2}\\
+		\sqrt{{(e+x)}^2 + y^2}^2 & = & \left (2a - \sqrt{{(e-x)}^2 + y^2}\right )^2\\
+		e^2 + 2ex + x^2 + y^2 & = & 4a^2 - 4a \sqrt{(e-x)^2+y^2} + e^2 - 2ex + x^2 + y^2\\
+		a\sqrt{{(e-x)}^2 + y^2} & = & a^2 - ex\\
+		\left (a\sqrt{{(e-x)}^2 + y^2}\right )^2 & = & (a^2 - ex)^2\\
+		a^2e^2 - 2a^2ex + a^2x^2 + a^2y^2 &=& a^4 - 2a^2ex + e^2x^2\\
+		a^2x^2 - e^2x^2 + a^2y^2 &=& a^4 - a^2e^2\\
+		\left(a^2 - e^2\right)x^2 + a^2y^2 &=& a^2\left(a^2 - e^2\right)\\
+		b^2x^2 + a^2y^2 &=& a^2b^2\\
+		\frac{x^2}{a^2} + \frac{y^2}{b^2} &=& 1
+	\end{array}
+\end{displaymath}
+Die Substitution $\left(a^2 - e^2\right) = b^2$ folgt aus der Definition der linearen Exzentrizität. Wird der Spezialfall des Kreises betrachtet kann die Gleichung noch deutlich vereinfacht werden.
+\begin{displaymath}
+	\begin{array}{rcl}
+		\frac{x^2}{r^2} + \frac{y^2}{r^2} &=& 1\\
+		x^2 + y^2 &=& r^2
+	\end{array}
+\end{displaymath}
+Da sowohl a, als auch b gleich r sind können bei ersetzt werden. 
 \section{Parabel}
-Mittelpunktsgleichung
+Auch bei der Parabel wird die wird die Definition zur Herleitung herangezogen. Jedoch muss der Parabelfaktor p eingeführt werden, welcher den Abstand zwischen F und F' angibt. Nun können die Strecken ersetzt werden.
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{PF} &=& \overline{Pl}\\
+		\sqrt{\left(x-\frac{p}{2}\right)^2+y^2} &=& \frac{p}{2} + x\\
+		\left(x-\frac{p}{2}\right)^2+y^2 &=& \left(\frac{p}{2} + x\right)^2\\
+		x^2 - px + \frac{p^2}{4} + y^2 &=& x^2 + px + \frac{p^2}{4}\\
+		y^2 &=& 2px
+	\end{array}
+\end{displaymath}
 \section{Hyperbel}
-Mittelpunktsgleichung
+Bei der Herleitung für die Hyperbel muss eine Fallunterscheidung eingeführt werden, um sowohl den x-positiven als auch den y-negativen Ast auf die Definition zurückzuführen. Für den rechten Ast wird wie folgt vorgegangen:
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{{PF}_1} - \overline{{PF}_2}  & = & 2a\\
+		\sqrt{{(e+x)}^2 + y^2} - \sqrt{{(e-x)}^2 + y^2} & = & 2a\\
+		\sqrt{{(e+x)}^2 + y^2} & = & 2a + \sqrt{{(e-x)}^2 + y^2}\\
+		\sqrt{{(e+x)}^2 + y^2}^2 & = & \left (2a + \sqrt{{(e-x)}^2 + y^2}\right )^2\\
+		e^2 + 2ex + x^2 + y^2 & = & 4a^2 + 4a \sqrt{(e-x)^2+y^2} + e^2 - 2ex + x^2 + y^2\\
+		a\sqrt{{(e-x)}^2 + y^2} & = & ex - a^2\\
+		\left (a\sqrt{{(e-x)}^2 + y^2}\right )^2 & = & (ex - a^2)^2\\
+		a^2e^2 - 2a^2ex + a^2x^2 + a^2y^2 &=& e^2x^2 - 2a^2ex + a^4\\
+		a^2e^2 - a^4 &=& e^2x^2 - a^2x^2 - a^2y^2\\
+		e^2x^2 - a^2x^2 - a^2y^2 &=& a^2e^2 - a^4\\
+		\left(e^2 - a^2\right)x^2 - a^2y^2 &=& a^2\left(e^2 - a^2\right)\\
+		b^2x^2 - a^2y^2 &=& a^2b^2\\
+		\frac{x^2}{a^2} - \frac{y^2}{b^2} &=& 1
+	\end{array}
+\end{displaymath}
+Auch in diesem Fall kann die Substitution $\left(e^2 - a^2\right) = b^2$ auf die Definition der linearen Exzentrizität zurückgeführt werden. Für den 2. Fall wird lediglich die ausgehende Substitution leicht modifiziert:
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{{PF}_1} - \overline{{PF}_2}  & = & 2a\\
+		\sqrt{{(e+(-x))}^2 + y^2} - \sqrt{{((-x)-e)}^2 + y^2} & = & 2a\\
+		\sqrt{{(e-x)}^2 + y^2} & = & 2a + \sqrt{{(-e-x)}^2 + y^2}\\
+		\sqrt{{(e-x)}^2 + y^2}^2 & = & \left (2a + \sqrt{{(-e-x)}^2 + y^2}\right )^2\\
+		e^2 - 2ex + x^2 + y^2 & = & 4a^2 + 4a \sqrt{(-e-x)^2+y^2} + e^2 + 2ex + x^2 + y^2\\
+		a\sqrt{{(-e-x)}^2 + y^2} & = & -ex - a^2\\
+		\left (a\sqrt{{(-e-x)}^2 + y^2}\right )^2 & = & (-ex - a^2)^2\\
+		a^2e^2 + 2a^2ex + a^2x^2 + a^2y^2 &=& e^2x^2 + 2a^2ex + a^4\\
+		a^2e^2 - a^4 &=& e^2x^2 - a^2x^2 - a^2y^2\\
+		e^2x^2 - a^2x^2 - a^2y^2 &=& a^2e^2 - a^4\\
+		\left(e^2 - a^2\right)x^2 - a^2y^2 &=& a^2\left(e^2 - a^2\right)\\
+		b^2x^2 - a^2y^2 &=& a^2b^2\\
+		\frac{x^2}{a^2} - \frac{y^2}{b^2} &=& 1
+	\end{array}
+\end{displaymath}	
