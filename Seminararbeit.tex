@@ -1,13 +1,16 @@
-\documentclass[12pt, a4paper, draft]{report}
+\documentclass[12pt, a4paper]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
 \usepackage[left=2.5cm, right=2.5cm]{geometry}
-\usepackage[pdftex,bookmarks=true]{hyperref}
+\usepackage[bookmarks=true]{hyperref}
 \usepackage{ngerman}
 \usepackage{cite}
 \usepackage{array}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{pstricks-add}
+\usepackage{graphicx}
+\usepackage{pst-plot,pst-math}
 \AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{empty}}} 
 \onehalfspacing
 \title{Kegelschnitte}
@@ -39,6 +42,9 @@
 
 \bibliographystyle{plaindin}
 \bibliography{cites}
+
+\clearpage
+\input{./tex/Grafiken}
 
 \clearpage
 \input{./tex/Erklaerung}
