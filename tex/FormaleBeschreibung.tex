@@ -1,37 +1,37 @@
 \setcounter{section}{0}
 In diesem Kapitel sollen die Mittelpunktsgleichungen für die Kegelschnitte erarbeitet werden. Anhand derer können die kartesischen Koordinaten beliebiger Kegelschnitte ermittelt werden.\\
-Der Name bezieht sich auf die Tatsache, dass der Mittelpunkt des Kegelschnitts mit dem Mittelpunkt des Koordinatensystems übereinstimmt. Bezüglich der Orientierung wird die 1. Hauptlage verwendet, welche die Hauptachsen der Kegelschnitte auf die x-Achse legt und F1 in den positiven x-Bereich.\\
+Der Name bezieht sich auf die Tatsache, dass der Mittelpunkt des Kegelschnitts mit dem Mittelpunkt des Koordinatensystems übereinstimmt. Bezüglich der Orientierung wird die 1. Hauptlage verwendet, welche die Hauptachsen der Kegelschnitte auf die x-Achse legt und ${F}_1$ in den positiven x-Bereich.\\
 Um die Aufgabe zu lösen, wird Kenntnis um den Begriff der Exzentrizität vorausgesetzt, welche im folgenden Einschub aufgefrischt wird.
 \section{Exzentrität}
-Wie der Name vorwegnimmt beschreibt die Exzentrizität die Abweichung eines Kegelschnitts von der Idealform eines Kreises. Sie wird in 2 Formen dargestellt. Zum einen die lineare, zum anderen die numerische Exzentrizität.
+Wie der Name vorwegnimmt beschreibt die Exzentrizität die Abweichung eines Kegelschnitts von der Idealform eines Kreises. Sie wird in zwei Formen dargestellt. Zum einen die lineare, zum anderen die numerische Exzentrizität.
 \subsection{Lineare Exzentrizität}
-Die lineare Exzentrizität e gibt die Länge einer konkreten Strecke an. Der Abstand von Brennpunkt und Mittelpunkt wird durch sie ausgedrückt. Bestimmt wird e wie folgt:
+Die lineare Exzentrizität $e$ gibt die Länge einer konkreten Strecke an. Der Abstand von Brennpunkt und Mittelpunkt wird durch sie ausgedrückt. Bestimmt wird $e$ wie folgt:
 \begin{displaymath}
 	\begin{array}{rcl}
 		e & = & \sqrt{a^2\pm b^2}
 	\end{array}
 \end{displaymath}
-a entspricht dabei der bereits vorgestellten großen Halbachse. Die kleine Halbachse, die Strecke zwischen M und einem Nebenscheitel, wird als b bezeichnet.\\
-Dass der Ausdruck für eine Ellipse eine Differenz ist, lässt sich leicht zeigen. Für sie wird einer der Nebenscheitel S3 betrachtet. Dabei entsteht ein rechtwinkliges Dreieck $\triangle$ MF1S3. Mit Hilfe des Satzes des Pythagoras lässt sich also schreiben:
+$a$ entspricht dabei der bereits vorgestellten großen Halbachse. Die kleine Halbachse, die Strecke zwischen $M$ und einem Nebenscheitel, wird als $b$ bezeichnet.\\
+Dass der Ausdruck für eine Ellipse eine Differenz ist, lässt sich leicht zeigen\cite[S.11]{Scheid:1985}. Für sie wird einer der Nebenscheitel, ${S}_3$, betrachtet. Es entsteht das rechtwinklige Dreieck $\triangle M{F}_1{S}_3$. Mit Hilfe des Satzes des Pythagoras lässt sich also schreiben:
 \begin{displaymath}
-	\begin{array}{ccccl}
-		\overline{M{S}_1}^2 & + & \overline{{S}_1{F'}_1}^2 & = & \overline{M{F'}_1}^2\\
-		a^2 & + & b^2 & = & e^2\\
-		&& e & = & \sqrt{a^2+b^2}
+	\begin{array}{ccccll}
+		\overline{M{F}_1}^2 & + & \overline{M{S}_3}^2 & = & \overline{{F}_1{S}_3}^2 &\\
+		e^2 & + & b^2 & = & a^2 &\\
+		&& e & = & \sqrt{a^2-b^2} & \text{\cite[S.19]{Bronstein:1996}}
 	\end{array}
 \end{displaymath}
 Die Substitution $(F1,S3)^2 = a^2$ folgt aus der Hyperbeldefinition.\\
-Um zu zeigen, dass der Ausdruck für eine Hyperbel eine Summe ist, muss F1 transformiert werden. F1 wird bei konstantem Radius um M rotiert, bis es auf dem Lot auf der Hauptachse durch S1 ist. Dadurch entsteht das rechtwinklige Dreieck $\triangle$ MS1F1'.
+Um zu zeigen\cite[S.44f]{Scheid:1985}, dass der Ausdruck für eine Hyperbel eine Summe ist, muss ${F}_1$ transformiert werden. ${F}_1$ wird bei konstantem Radius um $M$ rotiert, bis es auf dem Lot auf der Hauptachse durch ${S}_1$ ist. Dadurch entsteht das rechtwinklige Dreieck $\triangle M{S}_1{F'}_1$.
 \begin{displaymath}
-	\begin{array}{ccccl}
-		\overline{M{F}_1}^2 & + & \overline{M{S}_3}^2 & = & \overline{{F}_1{S}_3}^2\\
-		e^2 & + & b^2 & = & a^2\\
-		&& e & = & \sqrt{a^2-b^2}
+	\begin{array}{ccccll}
+		\overline{M{S}_1}^2 & + & \overline{{S}_1{F'}_1}^2 & = & \overline{M{F'}_1}^2 &\\
+		a^2 & + & b^2 & = & e^2 &\\
+		&& e & = & \sqrt{a^2+b^2} & \text{\cite[S.21]{Bronstein:1996}}
 	\end{array}
 \end{displaymath}
 Da die Parabel über keinen sinnvollen Mittelpunkt verfügt, ist die Betrachtung in diesem Fall unnötig.\\
 \subsection{Numerische Exzentrizität}
-Die numerische Exzentrizität $\epsilon$ drückt das Verhältnis von e zu a aus. Sie trifft somit eine Aussage darüber, ob der Brennpunkt kürzer oder weiter vom Mittelpunkt entfernt ist als der Hauptscheitel.
+Die numerische Exzentrizität $\epsilon$ drückt das Verhältnis von $e$ zu $a$ aus. Sie trifft somit eine Aussage darüber, ob der Brennpunkt kürzer oder weiter vom Mittelpunkt entfernt ist als der Hauptscheitel.
 \begin{displaymath}
 	\epsilon = \frac{e}{a}
 \end{displaymath}
@@ -47,7 +47,7 @@ Anhand der numerische Exzentrizität kann auch die Ausprägung eines Kegelschnit
    \right.
 \end{displaymath}
 \section{Ellipse}
-Ein weiteres Mal wird die Definition als Basis der Herleitung genutzt. Dabei werden die Strecken durch bekannte Größen ersetzt.
+Ein weiteres Mal wird die Definition als Basis der Herleitung \cite[S.11]{Scheid:1985} genutzt. In diesem Fall werden die Strecken durch bekannte Größen ersetzt.
 \begin{displaymath}
 	\begin{array}{rcl}
 		\overline{{PF}_1} + \overline{{PF}_2} & = & 2a\\
@@ -71,9 +71,9 @@ Die Substitution $\left(a^2 - e^2\right) = b^2$ folgt aus der Definition der lin
 		x^2 + y^2 &=& r^2
 	\end{array}
 \end{displaymath}
-Da sowohl a als auch b gleich r sind, so können beide ersetzt werden. 
+Da sowohl $a$ als auch $b$ gleich $r$ sind, so können beide ersetzt werden. 
 \section{Parabel}
-Auch bei der Parabel wird die Definition zur Herleitung herangezogen. Jedoch muss der Parabelfaktor p eingeführt werden, welcher den Abstand zwischen F und F' angibt. Nun können die Strecken ersetzt werden.
+Auch bei der Parabel wird die Definition zur Herleitung\cite[S.45]{Scheid:1985} herangezogen. Jedoch muss der Parabelfaktor $p$ eingeführt werden, welcher den Abstand zwischen $F$ und $F'$ angibt. Nun können die Strecken ersetzt werden.
 \begin{displaymath}
 	\begin{array}{rcl}
 		\overline{PF} &=& \overline{Pl}\\
@@ -84,7 +84,7 @@ Auch bei der Parabel wird die Definition zur Herleitung herangezogen. Jedoch mus
 	\end{array}
 \end{displaymath}
 \section{Hyperbel}
-Bei der Herleitung für die Hyperbel muss eine Fallunterscheidung eingeführt werden, um sowohl den x-positiven als auch den y-negativen Ast auf die Definition zurückzuführen. Für den rechten Ast wird wie folgt vorgegangen:
+Bei der Herleitung für die Hyperbel muss eine Fallunterscheidung eingeführt werden, um sowohl den $x$-positiven als auch den $y$-negativen Ast auf die Definition zurückzuführen. Für den rechten Ast wird wie folgt vorgegangen:
 \begin{displaymath}
 	\begin{array}{rcl}
 		\overline{{PF}_1} - \overline{{PF}_2} & = & 2a\\
@@ -102,7 +102,7 @@ Bei der Herleitung für die Hyperbel muss eine Fallunterscheidung eingeführt we
 		\frac{x^2}{a^2} - \frac{y^2}{b^2} &=& 1
 	\end{array}
 \end{displaymath}
-Auch in diesem Fall kann die Substitution $\left(e^2 - a^2\right) = b^2$ auf die Definition der linearen Exzentrizität zurückgeführt werden. Für den 2. Fall wird lediglich die ausgehende Substitution leicht modifiziert:
+Auch in diesem Fall kann die Substitution $\left(e^2 - a^2\right) = b^2$ auf die Definition der linearen Exzentrizität zurückgeführt werden. Für den zweiten Fall wird lediglich die ausgehende Substitution leicht modifiziert:
 \begin{displaymath}
 	\begin{array}{rcl}
 		\overline{{PF}_1} - \overline{{PF}_2} & = & 2a\\
